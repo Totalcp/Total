@@ -1,0 +1,95 @@
+/* 초기화 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 라이브러리 */
+.con {    
+    width : var(--max-width);
+    margin : 0 auto;
+}
+
+.con-min-width {
+    min-width : var(--max-width);
+}
+
+/* 커스텀 */
+:root {
+    --max-width : 1200px;
+    --pch : 100px;
+}
+
+
+/* 섹션설정 */
+/* 섹션설정 pc*/
+
+.pc-section {
+    background-color: white;
+}
+
+.pc-section__1st > div:nth-child(2) {
+    margin: 0 4px;
+}
+
+.pc-section__1st > div {
+    background-color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc-section__2nd > div:first-child {
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.pc-section__2nd > div > div{
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    margin-left : 2px;
+}
+
+/* 섹션설정 pc fin */
+/* 섹션설정 m*/
+/* 섹션설정 m fin */
+/* 섹션설정 fin */
+
+
+/* 반응형 설정 */
+@media (min-width : 901px) {
+    .pctopbar {
+        display: block;
+        position: fixed;
+    }
+    .pc-section, .pcfoot{
+        display: block;
+    }
+    .mtopbar {
+        display: none;
+    }
+    .m-section, .mfoot{
+        display: none;
+    }
+}
+
+@media (max-width : 900px) {
+    .pctopbar {
+        display: none;
+    }
+    .pc-section, .pcfoot {
+        display: none;
+    }
+    .mtopbar {
+        display: block;
+        position: fixed;
+    }
+    .m-section, .mfoot {
+        display: block;
+    }
+}
+/* 반응형 설정 fin */
+
+
