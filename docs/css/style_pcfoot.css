@@ -1,0 +1,36 @@
+/* 초기화 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 라이브러리 */
+.con {    
+    width : var(--max-width);
+    margin : 0 auto;
+}
+
+.con-min-width {
+    min-width : var(--max-width);
+}
+
+/* 커스텀 */
+:root {
+    --max-width : 1200px;
+    --pch : 100px;
+}
+
+.pcfoot {
+    background-color: black;
+    height: 200px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.pcfoot > div {
+    color : white;
+}
+
+.pcfoot > div > p {
+    padding: 2px 0;
+}

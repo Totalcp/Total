@@ -1,0 +1,58 @@
+/* 초기화 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 라이브러리 */
+.con {    
+    width : var(--max-width);
+    margin : 0 auto;
+}
+
+.con-min-width {
+    min-width : var(--max-width);
+}
+
+/* 커스텀 */
+:root {
+    --max-width : 900px;
+    --pch : 100px;
+}
+
+/* pc-topbar */
+.m-top {
+    position:fixed;
+    height: var(--pch);
+}
+
+.m-top > div:first-child {
+    height: 2px;
+    background-color:white;
+}
+
+/* m-topbar links */
+.top-links{
+    background-color: black;
+    color : white;
+}
+
+.top-links a {
+    display: flex;
+    padding: 0 7px;
+}
+/* m-topbar links fin */
+/* m-topbar 메뉴설정 */
+.top-bar {
+    border-bottom: 1px solid gray;
+    background-color: white;;
+    padding: 10px 0;
+}
+
+.top-bar__menu > ul > li > a {
+    position: relative;
+    width :120px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
