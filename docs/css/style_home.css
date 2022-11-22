@@ -73,6 +73,7 @@ body {
 /* 섹션설정 m*/
 .m-section{
     --max-width : 900px;
+    max-width : var(--max-width);
 }
 
 .m-section__1st > div {
