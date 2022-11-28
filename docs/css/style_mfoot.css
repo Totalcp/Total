@@ -16,7 +16,7 @@ body {
 
 /* 커스텀 */
 :root {
-    --max-width : 1200px;
+    --max-width : 900px;
     --pch : 100px;
 }
 

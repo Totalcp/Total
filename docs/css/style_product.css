@@ -22,8 +22,18 @@ body {
 }
 
 /* topbar설정 */
+.pctopbar {
+    z-index : 999;
+}
+
 .pctopbar:hover {
-    height: 406px;
+    height: 455px;
+    z-index: 999;
+}
+
+.mtopbar {
+    height: 100px;
+    z-index: 999;
 }
 
 /* nav설정 */
@@ -38,21 +48,10 @@ body {
     padding: 5px 9px;
 }
 /* ------- */
-.upsubm {
-    position : fixed;
-    top : 115px;
-    height: 20px;
-    background-color: white;
-    padding : 0 10px;
+.upsub {
+    border : 1px solid black;
+    text-align: center;
 }
-
-.upsubm > div > div {
-    width: 70%; 
-    height: 15px;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0.5);
-}
-
 /* ------- */
 .subm {
     --max-width : 1100px;
@@ -68,13 +67,41 @@ body {
 
 /* nav설정 fin */
 /* 섹션설정 */
-.m-section {
+/* pc섹션 */
+.pc-section .mb {
+    height: 400px;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+}
+
+.pc-section .mb > div {
+    position: absolute;
+    top : auto;
+    left : 52%;
+    right: 20px;
+    bottom: 15px;
+    padding: 30px 20px;
+}
+
+.pc-section .mb > div >p {
+    color : white;
+}
+
+.pc-section .mb > div strong {
+    font-size: 1.5rem;
+}
+/* pc 섹션 fin */
+/* 모바일 섹션 */
+.m-section{
     --max-width : 900px;
+    max-width: var(--max-width);
 }
 
 .m-section .subm {
     height: 80px;
 }
+/* 모바일 섹션 fin */
 /* 섹션설정 fin */
 
 /* 반응형 설정 */

@@ -21,8 +21,15 @@ body {
 }
 
 /* topbar설정 */
+.pctopbar {
+    z-index: 999;
+}
 .pctopbar:hover {
-    height: 406px;
+    height: 455px;
+}
+
+.mtopbar {
+    height: 100px;
 }
 
 /* nav설정 */
@@ -51,8 +58,25 @@ body {
 
 /* nav설정 fin */
 /* 섹션설정 */
+/* pc섹션 */
+.pc-section .mb {
+    height: 400px;
+    background-position: 50% 50%;
+    background-size: cover;
+    position: relative;
+}
 
-
+.pc-section .mb > div p {
+    font-size: 3rem;
+    font-weight: bold;
+    color : white;
+    letter-spacing: 2px;
+}
+/* pc 섹션 fin */
+.m-section{
+    --max-width : 900px;
+    max-width: var(--max-width);
+}
 
 
 /* 섹션설정 fin */

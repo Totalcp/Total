@@ -17,8 +17,13 @@ body {
 
 /* topbar설정 */
 .pctopbar:hover {
-    height: 406px;
+    height: 455px;
 }
+
+.mtopbar {
+    height: 100px;
+}
+
 /* 커스텀 */
 :root {
     --max-width : 1200px;
@@ -73,7 +78,7 @@ body {
 /* 섹션설정 m*/
 .m-section{
     --max-width : 900px;
-    max-width : var(--max-width);
+    max-width: var(--max-width);
 }
 
 .m-section__1st > div {
