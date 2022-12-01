@@ -10,7 +10,7 @@
     <title>토탈상사</title>
 
     <link rel="stylesheet" href="./css/style_home.css">
-    <script src="./js/script.js" defer></script>
+    <script src="./js/index.js" defer></script>
 
     <!-- 테일윈드 불러오기 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -18,10 +18,17 @@
     <!-- 폰트어썸 불러오기 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </head>
 <body>     
-    <object data="pctobpar.html" width="100%" height="auto"  class="pctopbar"></object>
+    <object data="pctobpar.html" width="100%" height="auto" class="pctopbar"></object>
+    
+    <div class="triggerbar flex con justify-end items-end">
+        <div class="flex w-[470px] h-[80px]"></div>
+    </div>
+
     <object data="mtobpar.html" width="100%" height="auto" class="mtopbar"></object>
     
     <a name="top"></a>
@@ -30,11 +37,10 @@
     </nav>
 
     <section class="pc-section">
-        <div class="h-[122px]"></div>
+        <div class="pc-section__banner flex h-[600px] justify-center items-center mb-8 bg-red-500">
+            <img src="" alt="배너이미지">
+        </div>
         <section class="con flex flex-col">
-            <div class="pc-section__banner flex h-[500px] justify-center items-center my-3 bg-red-500">
-                <img src="" alt="배너이미지">
-            </div>
             <div class="pc-section__1st flex h-[200px] mt-3">
                 <div class="flex flex-1">제품검색</div>
                 <div class="flex flex-1">주문하기</div>
