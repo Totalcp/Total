@@ -2,50 +2,67 @@ console.clear();
 
 let anchor=localStorage.getItem('pagenum');
 
-function anchorf(anchor){
-    console.log('anchorf');
-    $('.ex__'+anchor).css('display','flex');
-    $('.pd__'+anchor).css('display','flex');
+function init_click(anchor){
+    console.log('init_click');
+    $('.ex__'+anchor).css('display','none');
+    $('.pd__'+anchor).css('display','none');
+    $('.subm__'+anchor).css('backgroundColor','');
+    $('.subm__'+anchor).css('color','');
+    $('.subm__'+anchor).css('fontWeight','');
 }
 
-function submnonclick(no){
-    console.log('submnonclick');
-    $('.ex__'+no).css('display','none');
-    $('.pd__'+no).css('display','none');   
-}
-
-function submclick(no){
-    $('.subm__'+no).click(function() {
-        submnonclick(1);
-        submnonclick(2);
-        submnonclick(3);
-        submnonclick(4);
-        submnonclick(5);
+function submclick(anchor){
+    $('.subm__'+anchor).click(function() {
         console.log('submclick');
-        $('.ex__'+no).css('display','flex');
-        $('.pd__'+no).css('display','flex');
+        //초기화
+        init_click(1); 
+        init_click(2);
+        init_click(3);
+        // 항목 전환
+        $('.ex__'+anchor).css('display','flex');
+        $('.pd__'+anchor).css('display','flex');
+        $('.subm__'+anchor).css('backgroundColor','white');
+        $('.subm__'+anchor).css('color','black');
+        $('.subm__'+anchor).css('fontWeight','bold');
     });
 }
 
-// 모든 섹션 안보이게
-submnonclick(1); 
-submnonclick(2);
-submnonclick(3);
-submnonclick(4);
-submnonclick(5);
+function clicked(anchor){
+    console.log('clicked');
+    //초기화
+    init_click(1); 
+    init_click(2);
+    init_click(3);
+    // 항목 전환
+    $('.ex__'+anchor).css('display','flex');
+    $('.pd__'+anchor).css('display','flex');
+    $('.subm__'+anchor).css('backgroundColor','white');
+    $('.subm__'+anchor).css('color','black');
+    $('.subm__'+anchor).css('fontWeight','bold');
+}
 
-// 특정링크의 섹션만 보이게
+// 특정링크의 섹션만 보이게, 클릭된거 표현
 if(anchor==undefined){
-    anchorf(1);  
+    clicked(1);   
 }
 else {
-    anchorf(anchor);  
+    clicked(anchor);   
 }
-
 
 // 클릭한거만 보이게
 submclick(1);   
 submclick(2);
 submclick(3);
-submclick(4);
-submclick(5);
+
+//스크롤에 따른 헤더 변환
+$(window).scroll(function () { 
+	let scrollValue = $(document).scrollTop(); 
+    if(scrollValue>200){
+        $('.pctopbar').addClass('bgb-bd-w');
+        $('.mb').css('visibility','hidden');
+    }
+    else{
+        $('.pctopbar').removeClass('bgb-bd-w');
+        $('.mb').css('visibility','visible');
+    }
+});
