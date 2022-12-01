@@ -27,15 +27,8 @@ body {
     box-sizing: content-box;
 }
 
-.pctopbar.active {
+.pctopbar:hover {
     height: 429px;
-}
-
-.triggerbar {
-    position: fixed;
-    background-color: none;
-    height:122px;
-    z-index: 999;
 }
 
 .mtopbar {
