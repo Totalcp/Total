@@ -10,13 +10,3 @@ $(window).scroll(function () {
         $('.pctopbar').removeClass('bgb-bd-w');
     }
 });
-
-// 탑바 메뉴출력 조절
-let $this = $('.triggerbar');
-$this.children().mouseenter(function (){
-    $('.pctopbar').addClass('active'); 
-});
-
-$this.children().mouseleave(function (){
-    $('.pctopbar').removeClass('active'); 
-});
