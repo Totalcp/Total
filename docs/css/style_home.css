@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
+    background-color: black;
 }
 
 /* 라이브러리 */
@@ -16,8 +16,26 @@ body {
 }
 
 /* topbar설정 */
-.pctopbar:hover {
-    height: 455px;
+.pctopbar {
+    height: 122px;
+    z-index: 998;
+}
+
+.pctopbar.bgb-bd-w {
+    background-color: black;
+    border-bottom : 1px solid white;
+    box-sizing: content-box;
+}
+
+.pctopbar.active {
+    height: 429px;
+}
+
+.triggerbar {
+    position: fixed;
+    background-color: none;
+    height:122px;
+    z-index: 999;
 }
 
 .mtopbar {
@@ -45,15 +63,6 @@ body {
 
 /* 섹션설정 */
 /* 섹션설정 pc*/
-
-.pc-section {
-    background-color: white;
-}
-
-.pc-section__1st > div:nth-child(2) {
-    margin: 0 4px;
-}
-
 .pc-section__1st > div {
     background-color: green;
     justify-content: center;

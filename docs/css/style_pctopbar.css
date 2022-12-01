@@ -17,13 +17,19 @@ body {
 /* 커스텀 */
 :root {
     --max-width : 1200px;
-    --pch : 100px;
+    --pch : 122px;
 }
 
 /* pc-topbar */
 .pc-top {
     position:fixed;
     height: var(--pch);
+    color : white;
+}
+
+.pc-top.active {
+    background-color: black;
+    border-bottom: 1px solid white;
 }
 
 .pc-top > div:first-child {
@@ -32,20 +38,14 @@ body {
 }
 
 /* pc-topbar links */
-.top-links{
-    background-color: black;
-    color : white;
-}
-
 .top-links a {
     display: flex;
     padding: 0 7px;
 }
 /* pc-topbar links fin */
 /* pc-topbar 메뉴설정 */
-.top-bar {
-    border-bottom: 1px solid gray;
-    background-color: white;;
+.top-bar.active {
+    border-bottom : 1px solid white;
 }
 
 .top-bar__menu > ul > li > a {
@@ -54,8 +54,10 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
+    font-weight: bold;
 }
 
+/* 글씨밑줄 */
 .top-bar__menu > ul > li > a::after {
     content:"";
     position:absolute;
@@ -64,12 +66,13 @@ body {
     transform:translateX(-50%);
     width:0;
     height:2px;
-    background-color:black;
+    background-color:white;
     transition: width 0.3s;
 }
 .top-bar__menu > ul > li:hover > a::after {
     width : 90%;
 }
+/* 글씨밑줄  fin */
 
 .top-bar__menu > ul > li > div {
     display: block;
@@ -78,10 +81,10 @@ body {
     left : 0;
     width : 100%;
     min-height: 200px;
-    background-color : white;
     transform : translateY(1px);
-    border-bottom: 1px solid gray;
     min-height: 306px;
+    background-color: black;
+    border-bottom: 1px solid white;
 }
 
 .top-bar__menu > ul > li:hover >  div {
@@ -99,7 +102,7 @@ body {
 }
 
 .top-bar__menu > ul > li > div > div > ul > li:hover > a {
-    color : rgba(0,0,0,0.7);
+    color : rgba(255,255,255,0.7);
 }
 
 /* 1-2 메뉴설정 */
@@ -108,8 +111,9 @@ body {
     font-weight: bold;
 }
 
-.top-bar__menu-pdl > div:hover, .top-bar__menu-pdr > div:hover {
-    color : rgba(0,0,0,0.7);
+.top-bar__menu-pdl > div:hover, 
+.top-bar__menu-pdr > div > div > div:hover {
+    color : rgba(255,255,255,0.7);
 }
 
 .top-bar__menu-pdl > ul > li {
@@ -117,7 +121,7 @@ body {
 }
 
 .top-bar__menu-pdl > ul > li:hover > a {
-    color : rgba(0,0,0,0.7);
+    color : rgba(255,255,255,0.7);
 }
 
 .top-bar__menu-pdr > div > div > div {
@@ -130,7 +134,7 @@ body {
 }
 
 .top-bar__menu-pdr > div > div > ul > li:hover > a {
-    color : rgba(0,0,0,0.7);
+    color : rgba(255,255,255,0.7);
 }
 /* 1-2 메뉴설정 fin*/
 /* pc-topbar 메뉴설정 fin*/
