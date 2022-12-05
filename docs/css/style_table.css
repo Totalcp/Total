@@ -1,0 +1,34 @@
+/* 초기화 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* 라이브러리 */
+.con {    
+    width : var(--max-width);
+    margin : 0 auto;
+}
+
+.con-min-width {
+    min-width : var(--max-width);
+}
+
+/* 커스텀 */
+:root {
+    --max-width : 1200px;
+    --pch : 122px;
+}
+
+[class^=tb__] {
+    color : white;
+}
+
+[class^=tb__] table{
+    border : 1px solid white;
+}
+
+[class^=tb__] table  tr >* {
+    border : 1px solid white;
+}

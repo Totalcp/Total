@@ -44,7 +44,6 @@ body {
 .subm {
     height : 80px;
     margin : 70px 0;
-    padding : 0 50px;
 }
 .subm > div > div {
     justify-content: center;

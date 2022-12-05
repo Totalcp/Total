@@ -54,7 +54,6 @@ body {
 .subm {
     height : 80px;
     margin : 70px 0;
-    padding : 0 50px;
 }
 .subm > div > div {
     justify-content: center;
@@ -98,7 +97,7 @@ body {
     font-size: 1.5rem;
 }
 
-.pc-section [class*="ex__"]{
+.pc-section [class^="ex__"]{
     background-color: white;
     color : black;
     max-width : 1000px;
@@ -110,30 +109,33 @@ body {
     margin-bottom: 20px;
 }
 
-.pc-section [class*="ex__"] > div:first-child{
+.pc-section [class^="ex__"] > div:first-child{
     justify-content: center;
     align-items: center;  
 }
 
-.pc-section [class*="ex__"] > div:first-child > img{
+.pc-section [class^="ex__"] > div:first-child > img{
     width : 270px;
     height: 200px;
     object-fit: cover; 
 }
 
 
-.pc-section [class*="ex__"] > div:last-child{
+.pc-section [class^="ex__"] > div:last-child{
     padding-left : 40px;
+}
+
+.pc-section .pd {
+    margin-top: 80px;
+    --max-width : 1000px;
+}
+.pc-section .pd > div {
+    width: 100%;
+    height: auto;
+    margin-bottom: 100px;
 }
 /* pc 섹션 fin */
 /* 모바일 섹션 */
-.m-section{
-    --max-width : 900px;
-    max-width: var(--max-width);
-}
 
-.m-section .subm {
-    height: 80px;
-}
 /* 모바일 섹션 fin */
 /* 섹션설정 fin */

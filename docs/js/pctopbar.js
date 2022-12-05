@@ -1,8 +1,9 @@
 console.clear();
 
-function pageclick(no) {
+function pageclick(main,no) {
+    localStorage.setItem('pagemain',main);
     localStorage.setItem('pagenum',no);
-    console.log(pagenum);
+    console.log(pagemain+", "+pagenum);
 }
 
 let $location = $('.top-bar__menu').children('ul');
