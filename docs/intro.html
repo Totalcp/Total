@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./css/style_intro.css">
     <script src="./js/intro.js" defer></script>
+    <script src="./js/basicset.js" defer></script>
 
     <!-- 테일윈드 불러오기 -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,44 +24,45 @@
 
 </head>
 <body>     
-    <object data="pctobpar.html" width="100%" height="auto"  class="pctopbar"></object>
-    <object data="mtobpar.html" width="100%" height="auto" class="mtopbar"></object>
-    
+    <div id="head-top"></div>
+
     <section class="pc-section">
         <a name="top"></a>
         <nav class="sidem flex items-center">
             <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
         </nav>
 
-        <div class="mb flex justify-center items-center"
+        <div class="mb flex justify-center items-center mb-8"
             style="background-image: url('img/회사소개.png');">
-            <div class="flex flex-col">
+            <div class="flex">
                 <p>회사소개</p>
             </div>
         </div>
 
-        <section class="con flex flex-1 flex-col">
-            <nav class="subm flex con justify-center mt-[80px] mb-[50px]">
+        <nav class="subm flex w-full">
+            <div class="flex con justify-center">
                 <div class="subm__1 flex w-1/5 h-full mx-2">
                     CI
                 </div>
                 <div class="subm__2 flex w-1/5 h-full mx-2">
                     미디어
                 </div>
-            </nav>
+            </div>
+        </nav>
             
+        <section class="con flex flex-1 flex-col">
             <div class="ex flex flex-col mt-[100px] mb-[80px]">
                 <div class="ex__1 flex w-full h-full justify-center items-center">
                     <p>CI</p>
                 </div>
                 <div class="ex__2 flex w-full h-full justify-center items-center">
-                    <!-- <p>미디어</p> -->
+                    <p>미디어</p>
                 </div>
             </div>  
             
-            <div class="pd con mb-[50px]">
+            <div class="pd con">
                 <div class="flex flex-col">
-                    <div class="pd__1 flex flex-col items-center w-full">
+                    <div class="pd__1 flex flex-col items-center w-full mb-[120px]">
                         <div class="flex w-full h-[195px]">
                             <div class="flex flex-1 h-full items-center justify-end mr-[80px]">
                                 <img src="img/토탈-ci.png" alt="회사로고" class="w-[300px] mt-8">
@@ -72,7 +74,7 @@
                                 </p>
                             </div>
                         </div> 
-                        <div class="flex justify-center mt-[150px] mb-[40px]">
+                        <div class="flex justify-center mt-[150px] mb-[60px]">
                             <p><strong class="text-[28px]">주요 브랜드</strong></p>
                         </div>                       
                         <div class="flex h-[90px] mb-[80px]">
@@ -93,68 +95,6 @@
         </section>
     </section>
 
-    <section class="m-section">
-        <a name="top"></a>
-        <nav class="sidem flex items-center">
-            <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
-        </nav>
-        <div class="h-[122px]"></div>
-        <section class="flex flex-1 flex-col mx-auto">
-            <div class="mb flex w-full justify-center items-center h-[200px]">
-                회사소개
-            </div>
-
-            <nav class="subm flex justify-center">
-                <div class="subm__1 flex w-1/5 h-full">
-                    CI
-                </div>
-                <div class="subm__2 flex w-1/5 h-full">
-                    회사연혁
-                </div>
-                <div class="subm__3 flex w-1/5 h-full">
-                    조직도
-                </div>
-                <div class="subm__4 flex w-1/5 h-full">
-                    미디어
-                </div>
-            </nav>
-
-            <div class="ex flex flex-col h-[200px]">
-                <div class="ex__1 flex w-full h-full my-3 justify-center items-center bg-blue-500">
-
-                </div>
-                <div class="ex__2 flex w-full h-full my-3 justify-center items-center bg-red-500">
-
-                </div>
-                <div class="ex__3 flex w-full h-full my-3 justify-center items-center">
-
-                </div>
-                <div class="ex__4 flex w-full h-full my-3 justify-center items-center">
-
-                </div>
-            </div>  
-            
-            <div class="pd mb-5">
-                <div class="flex flex-col">
-                    <div class="pd__1 flex w-full h-[200px] bg-purple-500">
-
-                    </div>
-                    <div class="pd__2 flex w-full h-[200px] bg-red-500">
-
-                    </div>
-                    <div class="pd__3 flex w-full h-[200px] bg-gray-500">
-
-                    </div>
-                    <div class="pd__4 flex w-full h-[200px] bg-gray-500">
-
-                    </div>
-                </div>
-            </div> 
-        </section>
-    </section>
-
-    <object data="pcfoot.html" width="100%" height="200px"  class="pcfoot"></object>
-    <object data="mfoot.html" width="100%" height="200px" class="mfoot"></object>
-
+    <div id="foot-bar"></div>
 </body>
 </html>

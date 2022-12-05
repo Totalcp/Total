@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>토탈상사</title>
 
-    <link rel="stylesheet" href="./css/style_home.css">
+    <link rel="stylesheet" href="./css/style_index.css">
+    <script src="./js/basicset.js" defer></script>
     <script src="./js/index.js" defer></script>
 
     <!-- 테일윈드 불러오기 -->
@@ -23,8 +24,7 @@
 
 </head>
 <body>     
-    <object data="pctobpar.html" width="100%" height="auto" class="pctopbar"></object>
-    <object data="mtobpar.html" width="100%" height="auto" class="mtopbar"></object>
+    <div id="head-top"></div>
     
     <a name="top"></a>
     <nav class="sidem flex items-center">
@@ -32,62 +32,73 @@
     </nav>
 
     <section class="pc-section">
-        <div class="pc-section__banner flex h-[600px] justify-center items-center mb-8 bg-red-500">
-            <img src="" alt="배너이미지">
+        <div class="mb flex w-full h-[600px] justify-center items-center mb-8 flex-col">
+            <img src="img/토탈-ci.png" alt="토탈상사" class="flex">
+            <p class="flex">토탈상사는 고품질·고효율의 산업용 오일 공식판매사입니다.</p>
         </div>
-        <section class="con flex flex-col">
-            <div class="pc-section__1st flex h-[200px] mt-3">
-                <div class="flex flex-1">제품검색</div>
-                <div class="flex flex-1">주문하기</div>
-                <div class="flex flex-1">공지사항 바로가기</div>
-            </div>
-            <div class="pc-section__2nd flex h-[500px] mt-3 mb-8">
-                <div class="flex w-3/5 bg-blue-500">미디어</div>
-                <div class="flex flex-1 flex-col">
-                    <div class="flex flex-1 bg-gray-500 mb-[2px]">온라인 구매 바로가기 소품목들은 온라인구매로</div>
-                    <div class="flex flex-1 bg-blue-500 mt-[2px]">자료실</div>
+
+        <div class="con flex flex-col">
+            <div class="pc-section__1st flex w-full my-3">
+                <div class="flex">
+                    <a href="" class="flex flex-col h-full w-full items-center">
+                        <i class="fa-solid fa-magnifying-glass flex h-2/3"></i>
+                        <div class="flex w-full flex-col h-1/3">
+                            <p class="flex flex-1 text-[1.1rem]">제품검색하기</p>
+                            <p class="flex flex-1 text-[0.8rem]">토탈상사에서 다양한 오일제품들을 검색해보세요.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="tel:031-434-4730" class="flex flex-col h-full w-full items-center">
+                        <i class="fa-solid fa-phone flex h-2/3"></i>
+                        <div class="flex w-full flex-col h-1/3">
+                            <p class="flex flex-1 text-[1.1rem]">주문하기</p>
+                            <p class="flex flex-1 text-[0.8rem]">토탈상사에서 다이렉트 전화주문을 해보세요.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="custom.html" onclick="pageclick(1)" target="_top" class="flex flex-col h-full w-full items-center">
+                        <i class="fa-solid fa-bullhorn flex h-2/3"></i>
+                        <div class="flex w-full flex-col h-1/3">
+                            <p class="flex flex-1 text-[1.1rem]">공지사항</p>
+                            <p class="flex flex-1 text-[0.8rem]">토탈상사 소식을 확인해보세요.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </section>
+            <div class="pc-section__2nd flex h-[500px] mt-3 mb-8">
+                <div class="flex flex-col w-[740px] ">
+                    <i class="fa-solid fa-film flex text-[150px]"></i>
+                    <p class="flex mt-[25px] text-[40px]">Comming Soon</p>
+                </div>
+                <div class="flex w-[440px] flex-col">
+                    <div class="flex">
+                        <a href="https://smartstore.naver.com/totalcompany" target="_blank" class="flex flex-col h-full w-full items-center">
+                            <i class="fa-solid fa-phone flex h-2/3"></i>
+                            <div class="flex w-full flex-col h-1/3">
+                                <p class="flex flex-1 text-[1.1rem]">소품목 온라인 구매 바로가기</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex">
+                        <a href="custom.html" onclick="pageclick(3)" target="_top" class="flex flex-col h-full w-full items-center">
+                            <i class="fa-solid fa-phone flex h-2/3"></i>
+                            <div class="flex w-full flex-col h-1/3">
+                                <p class="flex flex-1 text-[1.1rem]">자료실</p>
+                                <p class="flex flex-1 text-[0.8rem]">제품에 관한 다양한 정보들을 확인해보세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="m-section">
-        <div class="h-[100px]"></div>
-        <section class="flex flex-col">
-            <div class="mb flex w-full justify-center items-center my-3"
-                style="background-image: url('img/제품-산업유-메인.png');">
-                <div class="flex flex-col">
-                    <p class="fl flex-colex"><strong>산업용 윤활유</strong></p>
-                    <hr class="my-4">
-                    <p class="flex">
-                        구동에너지의 감소 또는 전환분야, 공작기계 분야에서
-                    </p>
-                    <p class="flex">
-                        에너지의 전달과 생성하는 매우 중요한 역할을 하고 있으며,
-                    </p>
-                    <p class="flex">
-                        공조기 및 압축 공기가 필요한 산업 분야에서도 필수적인 윤활유입니다.
-                    </p>
-                    </div>
-            </div>
-            <div class="m-section__1st flex h-[150px] mt-3">
-                <div class="flex flex-1 h-full">CI</div>
-                <div class="flex flex-1 h-full">제품</div>
-                <div class="flex flex-1 h-full">문의 및 주문전화(대용량)</div>
-                <div class="flex flex-1 h-full">온라인구매(소제품)</div>
-            </div>
-            <div class="m-section__2nd flex flex-col mt-3 mb-8">
-                <div class="flex h-[300px] bg-blue-500">미디어</div>
-                <div class="flex h-[150px] mt-[3px]">
-                    <div class="flex flex-1 h-full bg-gray-500">공지사항 바로가기</div>
-                    <div class="flex flex-1 h-full bg-blue-500">자료실</div>
-                </div>
-            </div>
-        </section>
     </section>
 
-    <object data="pcfoot.html" width="100%" height="200px"  class="pcfoot"></object>
-    <object data="mfoot.html" width="100%" height="200px" class="mfoot"></object>
+    <div id="foot-bar"></div>
 
 </body>
 </html>
