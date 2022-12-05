@@ -7,7 +7,6 @@ body {
 /* 라이브러리 */
 .con {    
     width : var(--max-width);
-    margin : 0 auto;
 }
 
 .con-min-width {
@@ -21,23 +20,12 @@ body {
 }
 
 /* topbar설정 */
-.pctopbar {
-    height: 122px;
+#head-top {
     z-index: 999;
-}
-
-.pctopbar.bgb-bd-w {
-    background-color: black;
-    border-bottom : 1px solid white;
-}
-
-.pctopbar:hover {
-    height: 429px;
-}
-
-.mtopbar {
-    height: 100px;
-}
+    height: 122px;
+    position: fixed;
+    width: 100%;
+}  
 
 /* nav설정 */
 .sidem {
@@ -55,18 +43,19 @@ body {
 /* ------- */
 .subm {
     height : 80px;
+    margin : 70px 0;
     padding : 0 50px;
 }
-.subm > div {
+.subm > div > div {
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
-    color : white;
+    background-color: gray;
     border-radius: 50%;
     margin : 0 20px;
     font-size: 1.1rem;
+    width: 220px;
 }
-.subm > div:hover  {
+.subm > div > div:hover  {
     background-color: white;
     color : black;
     font-weight: bold;
@@ -80,16 +69,26 @@ body {
     color : white;
 }
 .pc-section .mb {
-    height: 450px;
-    background-position: 50% 50%;
-    background-size: cover;
-    position: relative;
+    height: 600px;
+    border-bottom: 2px solid white;
+    box-sizing: content-box;
+    background-color: #00CFFF;
 }
 
-.pc-section .mb > div p {
-    font-size: 3rem;
+.pc-section .mb > div{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pc-section .mb p {
+    font-size: 3.5rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 6px;
+    align-items: center;
+    justify-content: center;
+    margin-left : 60px;
+    margin-top: 15px;
 }
 
 .pc-section .ex p {
@@ -110,38 +109,3 @@ body {
 }
 
 /* 섹션설정 fin */
-
-
-/* 반응형 설정 */
-@media (min-width : 901px) {
-    .pctopbar {
-        display: block;
-        position: fixed;
-    }
-    .pc-section, .pcfoot{
-        display: block;
-    }
-    .mtopbar {
-        display: none;
-    }
-    .m-section, .mfoot{
-        display: none;
-    }
-}
-
-@media (max-width : 900px) {
-    .pctopbar {
-        display: none;
-    }
-    .pc-section, .pcfoot {
-        display: none;
-    }
-    .mtopbar {
-        display: block;
-        position: fixed;
-    }
-    .m-section, .mfoot {
-        display: block;
-    }
-}
-/* 반응형 설정 fin */

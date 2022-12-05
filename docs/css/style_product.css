@@ -27,24 +27,12 @@ body {
 }
 
 /* topbar설정 */
-.pctopbar {
+#head-top {
+    z-index: 999;
     height: 122px;
-    z-index: 999;
-}
-
-.pctopbar.bgb-bd-w {
-    background-color: black;
-    border-bottom : 1px solid white;
-}
-
-.pctopbar:hover {
-    height: 429px;
-}
-
-.mtopbar {
-    height: 100px;
-    z-index: 999;
-}
+    position: fixed;
+    width: 100%;
+}  
 
 /* nav설정 */
 .sidem {
@@ -65,19 +53,19 @@ body {
 /* ------- */
 .subm {
     height : 80px;
-    margin : 50px 0;
-    padding : 0 50px;
     margin : 70px 0;
+    padding : 0 50px;
 }
-.subm > div {
+.subm > div > div {
     justify-content: center;
     align-items: center;
     background-color: gray;
     border-radius: 50%;
     margin : 0 20px;
     font-size: 1.1rem;
+    width: 220px;
 }
-.subm > div:hover  {
+.subm > div > div:hover  {
     background-color: white;
     color : black;
     font-weight: bold;
@@ -118,7 +106,7 @@ body {
     align-items: center;
 }
 
-.ex {
+.pc-section .ex {
     margin-bottom: 20px;
 }
 
@@ -149,39 +137,3 @@ body {
 }
 /* 모바일 섹션 fin */
 /* 섹션설정 fin */
-
-/* 반응형 설정 */
-@media (min-width : 901px) {
-    .pctopbar {
-        display: block;
-        position: fixed;
-    }
-    .pc-section, .pcfoot{
-        display: block;
-    }
-    .mtopbar {
-        display: none;
-    }
-    .m-section, .mfoot{
-        display: none;
-    }
-}
-
-@media (max-width : 900px) {
-    .pctopbar {
-        display: none;
-    }
-    .pc-section, .pcfoot {
-        display: none;
-    }
-    .mtopbar {
-        display: block;
-        position: fixed;
-    }
-    .m-section, .mfoot {
-        display: block;
-    }
-}
-/* 반응형 설정 fin */
-
-
