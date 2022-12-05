@@ -51,15 +51,15 @@ else {
 submclick(1);   
 submclick(2);
 
-//스크롤에 따른 헤더 변환
+//스크롤에 따른 메인배너 변환
 $(window).scroll(function () { 
 	let scrollValue = $(document).scrollTop(); 
-    if(scrollValue>200){
-        $('.pctopbar').addClass('bgb-bd-w');
+    if(scrollValue >=50){
         $('.mb').css('visibility','hidden');
+        $('#head-top').css('backgroundColor','black');
     }
     else{
-        $('.pctopbar').removeClass('bgb-bd-w');
         $('.mb').css('visibility','visible');
+        $('#head-top').css('backgroundColor','');
     }
 });
