@@ -1,26 +1,31 @@
 console.clear();
 
-// html 코드 채우기 
-$(document).ready(function(){
-    $("#pd-table").load("table.html");
-});
-
 //스크롤에 따른 메인배너 변환
-function scrolling (scrollValue){
-    if(scrollValue >=50){
+
+//스크롤 로컬테이지화
+let scrollValue = localStorage.getItem('scrollmain');
+
+function scrolling (scrollValue,slength){
+    if(scrollValue >=slength){
         $('.mb').css('visibility','hidden');
-        $('#head-top').css('backgroundColor','black');
+        gsap.to(".pc-section", {
+            y: -370
+        });
     }
     else{
         $('.mb').css('visibility','visible');
-        $('#head-top').css('backgroundColor','');
+        gsap.to(".pc-section", {
+            y: 0
+        });
     }
 }
 
-let scrollValue = $(document).scrollTop(); 
+// 일반실행
 scrolling(scrollValue);
 
+// 스크롤 이벤트 감지 후 실행
 $(window).scroll(function () { 
-	scrollValue = $(document).scrollTop(); 
-    scrolling(scrollValue);
+	localStorage.setItem('scrollmain',$(document).scrollTop());
+    let scrollValue = localStorage.getItem('scrollmain');
+    scrolling(scrollValue,50);
 });
