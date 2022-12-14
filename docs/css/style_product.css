@@ -2,7 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: white;
 }
 
 /* 라이브러리 */
@@ -29,7 +28,6 @@ body {
 /* topbar설정 */
 #head-top {
     z-index: 999;
-    height: 122px;
     position: fixed;
     width: 100%;
 }  
@@ -37,13 +35,15 @@ body {
 /* nav설정 */
 .sidem {
     position: fixed;
-    top : 600px;
+    top : auto;
     left : auto;
     right : 5%;
-    border : 1px solid black;
+    bottom:150px;
+    border : 1px solid white;
     background-color: rgba(255,255,255,0.7);
     border-radius: 12px;
     padding: 5px 9px;
+    z-index: 998;
 }
 /* ------- */
 .upsub {
@@ -139,3 +139,20 @@ body {
 
 /* 모바일 섹션 fin */
 /* 섹션설정 fin */
+
+@media (min-width : 901px) {
+    .pc-section{
+        display: block;
+    }
+    .m-section {
+        display: none;
+    }
+}
+@media (max-width : 900px) {
+    .pc-section{
+        display: none;
+    }
+    .m-section {
+        display: block;
+    }
+}

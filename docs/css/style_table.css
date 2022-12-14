@@ -32,3 +32,11 @@ body {
 [class^=tb__] table  tr >* {
     border : 1px solid white;
 }
+
+[class^=tb__] > div > p:not(:first-child) {
+    padding-left : 5px;
+}
+
+[class^=tb__] > div > p:last-child {
+    padding-top : 7px;
+}

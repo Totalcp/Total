@@ -21,13 +21,18 @@ body {
     --pch : 122px;
 }
 
-/* pc-topbar */
-.pc-top {
-    position:fixed;
-    height: var(--pch);
-    color : white;
+/* 공통부분 */
+.pc-top, .m-top {
+    position: fixed;
+    color: white;
 }
 
+.top-bar.active {
+    border-bottom : 1px solid white;
+    background-color: black;
+}
+/* 공통부분fin */
+/* pc-topbar */
 .pc-top > div:first-child {
     height: 2px;
     background-color:white;
@@ -46,12 +51,6 @@ body {
 }
 /* pc-topbar links fin */
 /* pc-topbar 메뉴설정 */
-
-.pc-top .top-bar.active {
-    border-bottom : 1px solid white;
-    background-color: black;
-}
-
 .pc-top .top-bar__menu > ul > li > a {
     position: relative;
     width :150px;
@@ -146,14 +145,113 @@ body {
 /* pc-topbar fin*/
 
 /* m-topbar */
-.m-top .top-menu i::before {
-    color : white;
+.m-top > div:first-child {
+    height: 2px;
+    background-color:white;
+}
+
+.m-top .pannel {
+    position: fixed;
+    top :0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: rgba(255,255,255,1);
+    visibility: hidden;
+    z-index: 999;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.m-top .pannel.active {
+    visibility: visible;
+}
+
+/* 아코디언 메뉴 on/off */
+.m-top [class*="pannelbtn"]::before {
     font-size: 30px;
     display: flex;
     height: 100%;
     align-items: center;
-    margin-top: -10px;
+    font-size: 1.4rem;
 }
+
+.m-top .pannelbtn-open::before {
+    color : white;
+}
+
+.m-top .pannelbtn-close::before{
+    color:gray;
+}
+/* 아코디언 메뉴 on/off fin */
+
+/* 아코디언 메뉴 */
+/* 메뉴색 */
+.m-top .pannel__acodian {
+    border : 1px solid gray;
+}
+
+.m-top .pannel__acodian > ul > li > div.head {
+    border-bottom: 2px solid darkgray;
+    color : black;
+    background-color: white;
+}
+
+.m-top .pannel__acodian > ul ul > li {
+    border-bottom: 2px solid darkgray;
+    color : rgba(0 ,0,0,0.7);
+    background-color: lightgray;
+}
+
+.m-top .pannel__acodian > ul ul ul > li {
+    display: flex;
+    border-bottom: 2px solid darkgray;
+    color : white;
+    background-color: gray;
+    align-items: center;
+}
+/* 메뉴색 fin*/
+
+.m-top .pannel__acodian > ul li {
+    display: flex;
+    flex-direction: column;
+    width : 100%;
+}
+
+.m-top .pannel__acodian a {
+    width : 100%;
+    padding : 10px 20px;
+    font-size: 1.2rem;
+    height: 100%;
+}
+
+.m-top .pannel__acodian .head {
+    display: flex;
+    align-items: center;
+}
+
+.m-top .pannel__acodian .body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* 접힘표시 */
+.m-top .pannel__acodian div:not(:only-child) > a::after {
+    content: "[+]";
+    display: flex;
+    flex:1 1 0;  /*flex-1*/
+    justify-content: flex-end;
+}
+
+.m-top .pannel__acodian div:not(:only-child) > a.minus::after {
+    content: "[-]";
+    display: flex;
+    flex:1 1 0;  /*flex-1*/
+    justify-content: flex-end;
+}
+/* 접힘표시 fin */
+/* 아코디언 메뉴 fin */
+
 /* m-topbar fin */
 
 @media (min-width : 901px) {
