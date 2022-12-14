@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- 모바일에서 기기의 해상도 능력에 상관없이 절대적인 크기로 나오도록 -->
+    <!-- 예를들어, pc에서의 300px이 모바일 에서도 똑같은 크기로 나오도록 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토탈상사</title>
+
+    <link rel="stylesheet" href="./css/style_index.css">
+    <script src="./js/basicset.js" defer></script>
+    <script src="./js/index.js" defer></script>
+
+    <!-- 테일윈드 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 스크롤 트리거 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <!-- 슬라이더 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>     
+    <div id="head-top"></div>
+    
+    <a name="top"></a>
+    <nav class="sidem flex items-center">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </nav>
+
+    <section class="pc-section">
+        <div class="mb flex w-full h-[600px] justify-center items-center mb-8 flex-col">
+            <!-- <div class="my-slider-box-1">
+                <div class="swiper">  
+                    <div class="swiper-wrapper"> 			
+                        <div class="swiper-slide bg-red-500">
+                            
+                        </div>
+                        <div class="swiper-slide bg-yellow-500">Slide 2</div>
+                        <div class="swiper-slide bg-yellow-300">Slide 3</div>
+                    </div>		 
+                </div>
+
+                <div class="my-slider-box-1__btn-group">
+                    <div class="my-slider-box-1__btn-left">
+                        <i class="fa-solid fa-caret-left"></i>
+                    </div>
+                    <div class="my-slider-box-1__btn-right">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>   
+                </div>
+            </div> -->
+            <img src="img/토탈-ci.png" alt="토탈상사" class="flex">
+            <p class="flex">토탈상사는 고품질·고효율의 산업용 오일 공식판매사입니다.</p>
+        </div>
+
+        <div class="con flex flex-col">
+            <div class="pc-section__1st flex w-full my-3">
+                <div class="flex">
+                    <a href="" class="flex flex-col h-full w-full items-center">
+                        <i class="fa-solid fa-magnifying-glass flex h-2/3"></i>
+                        <div class="flex w-full flex-col h-1/3">
+                            <p class="flex flex-1 text-[1.1rem]">제품검색하기</p>
+                            <p class="flex flex-1 text-[0.8rem]">토탈상사에서 다양한 오일제품들을 검색해보세요.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="tel:031-434-4730" class="flex flex-col h-full w-full items-center">
+                        <i class="fa-solid fa-phone flex h-2/3"></i>
+                        <div class="flex w-full flex-col h-1/3">
+                            <p class="flex flex-1 text-[1.1rem]">주문하기</p>
+                            <p class="flex flex-1 text-[0.8rem]">토탈상사에서 다이렉트 전화주문을 해보세요.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="flex">
+                    <a href="custom.html" onclick="pageclick(1)" target="_top" class="flex flex-col h-full w-full items-center">
+                        <i class="fa-solid fa-bullhorn flex h-2/3"></i>
+                        <div class="flex w-full flex-col h-1/3">
+                            <p class="flex flex-1 text-[1.1rem]">공지사항</p>
+                            <p class="flex flex-1 text-[0.8rem]">토탈상사 소식을 확인해보세요.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="pc-section__2nd flex h-[500px] mt-3 mb-8">
+                <div class="flex flex-col w-[740px] ">
+                    <i class="fa-solid fa-film flex text-[150px]"></i>
+                    <p class="flex mt-[25px] text-[40px]">Comming Soon</p>
+                </div>
+                <div class="flex w-[440px] flex-col">
+                    <div class="flex">
+                        <a href="https://smartstore.naver.com/totalcompany" target="_blank" class="flex flex-col h-full w-full items-center">
+                            <i class="fa-solid fa-cart-shopping flex h-2/3"></i>
+                            <div class="flex w-full flex-col h-1/3">
+                                <p class="flex flex-1 text-[1.1rem]">온라인 구매 바로가기</p>
+                                <p class="flex flex-1 text-[0.8rem]">소비재들을 온라인으로 빠르게 구매해보세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex">
+                        <a href="custom.html" onclick="pageclick(3)" target="_top" class="flex flex-col h-full w-full items-center">
+                            <i class="fa-solid fa-download flex h-2/3"></i>
+                            <div class="flex w-full flex-col h-1/3">
+                                <p class="flex flex-1 text-[1.1rem]">자료실</p>
+                                <p class="flex flex-1 text-[0.8rem]">제품에 관한 다양한 정보들을 확인해보세요.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-section">
+    </section>
+
+    <div id="foot-bar"></div>
+
+</body>
+</html>

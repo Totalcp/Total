@@ -194,19 +194,152 @@
         </div>
     </div>
 
-    <div class="m-top w-full">
+    <div class="m-top flex-1 w-full">
         <div class="h-[2px]"></div>
 
-        <div class="top-bar flex flex-1 h-[120px] mx-auto">
+        <div class="top-bar flex flex-1 h-[65px] mx-auto">
             <div class="top-bar__logo flex flex-1 h-full justify-start ml-[5%]"> 
                 <a href="index.html" target="_top" class="flex h-full items-center">
-                    <img src="img/토탈-상단로고.png" alt="토탈상사로고" class="h-[50px]">
+                    <img src="img/토탈-상단로고.png" alt="토탈상사로고" class="h-[40px]">
                 </a>
             </div>
             
-            <div class="top-menu flex flex-1 h-full justify-end mr-[5%]">
-                <i class="fa-solid fa-bars flex h-full"></i>
+            <div class="top-menu flex h-full justify-end mr-[5%]">
+                <i class="fa-solid fa-bars pannelbtn-open flex h-full"></i>
             </div>             
+        </div>
+
+        <div class="pannel">
+            <div class="w-full h-[65px] text-right pr-[5%]">
+                <i class="fa-solid fa-x pannelbtn-close flex h-full"></i>
+            </div>
+            
+            <!-- 아코디언 메뉴 -->
+            <nav class="pannel__acodian">
+                <ul class="w-full">
+                    <li>
+                        <div class="head">
+                            <a href="#" class="flex flex-1">회사소개</a>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li class="flex-1">
+                                    <a href="intro.html" target="_top" onclick="pageclick(0,1)"  class="flex flex-1">CI</a>
+                                </li>
+                                <li class="flex-1">
+                                    <a href="intro.html" target="_top" onclick="pageclick(0,2)" class="flex flex-1">미디어</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="head">
+                            <a href="#" class="flex flex-1">제품</a>        
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <a href="#" class="flex flex-1">산업용 윤활유</a>
+                                    </div>
+                                    <div class="body">
+                                        <ul>
+                                            <li class="flex-1">
+                                                <a href="productindus.html" target="_top" onclick="pageclick(1,1)"  class="flex flex-1">유압유</a>
+                                            </li>
+                                            <li class="flex-1">
+                                                <a href="productindus.html" target="_top" onclick="pageclick(1,2)" class="flex flex-1">습동면유</a>
+                                            </li>
+                                            <li class="flex-1">
+                                                <a href="productindus.html" target="_top" onclick="pageclick(1,3)"  class="flex flex-1">콤프레셔유</a>
+                                            </li>
+                                            <li class="flex-1">
+                                                <a href="productindus.html" target="_top" onclick="pageclick(1,4)" class="flex flex-1">기어오일</a>
+                                            </li>
+                                            <li class="flex-1">
+                                                <a href="productindus.html" target="_top" onclick="pageclick(1,5)"  class="flex flex-1">세척유</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <a href="#" class="flex flex-1">절삭유</a>
+                                    </div>
+                                    <div class="body">
+                                        <ul>
+                                            <li class="flex-1">
+                                                <a href="producticut.html" target="_top" onclick="pageclick(2,1)"  class="flex flex-1">수용성 절삭유</a>
+                                            </li>
+                                            <li class="flex-1">
+                                                <a href="producticut.html" target="_top" onclick="pageclick(2,2)" class="flex flex-1">비수용성 절삭유</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <a href="productplastic.html" target="_top" onclick="pageclick(3,1)"  class="flex flex-1">소성가공유</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <a href="productantirust.html" target="_top" onclick="pageclick(4,1)"  class="flex flex-1">방청유</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <a href="productfoodG.html" target="_top" onclick="pageclick(5,1)"  class="flex flex-1">식품등급유</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <a href="productheat.html" target="_top" onclick="pageclick(6,1)"  class="flex flex-1">열처리유</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div class="head">
+                                        <a href="productgris.html" target="_top" onclick="pageclick(7,1)"  class="flex flex-1">그리스</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="head">
+                            <a href="#" class="flex flex-1">고객지원</a>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li class="flex-1">
+                                    <a href="custom.html" target="_top" onclick="pageclick(0,1)"  class="flex flex-1">공지사항</a>
+                                </li>
+                                <li class="flex-1">
+                                    <a href="custom.html" target="_top" onclick="pageclick(0,2)" class="flex flex-1">오시는길</a>
+                                </li>
+                                <li class="flex-1">
+                                    <a href="custom.html" target="_top" onclick="pageclick(0,3)" class="flex flex-1">자료실</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
     </div>
 
