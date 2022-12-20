@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- 모바일에서 기기의 해상도 능력에 상관없이 절대적인 크기로 나오도록 -->
+    <!-- 예를들어, pc에서의 300px이 모바일 에서도 똑같은 크기로 나오도록 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토탈상사</title>
+
+    <link rel="stylesheet" href="./css/style_product.css">
+    <script src="./js/product.js" defer></script>
+    <script src="./js/basicset.js" defer></script>
+    <script src="./js/change_pd.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
+
+    <!-- 테일윈드 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 슬라이더 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>     
+    <div id="head-top"></div>
+
+    <a name="top"></a>
+    <nav class="sidem flex items-center">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </nav>
+    <section class="pc-section">
+        <div class="h-[122px]"></div>
+
+        <!-- Slider main container -->
+        <div class="mb swiper flex flex-col w-full h-[480px] mb-4 items-center">
+            <!-- Additional required wrapper -->
+            <div class="flex swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide flex justify-center items-end"
+                    style="background-image: url('img/제품-산업유-메인.png');">
+                    <div class="flex flex-1"></div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 flex-col">
+                            <p class="flex">
+                                <strong>산업용 윤활유 (Industrial Lubricants)</strong>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex">
+                                구동에너지의 감소 또는 전환분야, 공작기계 분야에서
+                            </p>
+                            <p class="flex">
+                                에너지의 전달과 생성하는 매우 중요한 역할을 하고 있으며,
+                            </p>
+                            <p class="flex">
+                                공조기 및 압축 공기가 필요한 산업 분야에서도 필수적인 윤활유입니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center items-end"
+                    style="background-image: url('img/제품-절삭유-메인.png');">
+                    <div class="flex flex-1"></div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 flex-col">
+                            <p class="flex">
+                                <strong>절삭유 (Cutting Fluid)</strong>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex">
+                                기계 가공에서 공구의 냉각과 윤활을 위해서 사용되는 액체로,
+                            </p>
+                            <p class="flex">
+                                기름, 기름+물 혼합물, 페이스트, 젤, 미스트 등 그 종류는 다양합니다.
+                            </p>
+                            <p class="flex">
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center items-end"
+                    style="background-image: url('img/제품-소성가공유-메인.png');">
+                    <div class="flex flex-1"></div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 flex-col">
+                            <p class="flex flex-row">
+                                <strong>소성가공유 (Punch·Stamp·Extrude·Roll·Fine-Blanking Fluids)</strong>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex">
+                                소성가공(소재에 열을 가하거나 실온에서 변형을 주는 가공법)에
+                            </p>
+                            <p class="flex">
+                                활용되는 윤활유입니다. 
+                            </p>
+                            <p class="flex">
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center items-end"
+                    style="background-image: url('img/제품-방청유-메인.png');">
+                    <div class="flex flex-1"></div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 flex-col">
+                            <p class="flex">
+                                <strong>방청유 (Corrosion Preventives)</strong>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex">
+                                금속, 특히 철에 대한 보호막 역할을 하는 방청첨가제가 함유된 오일로,
+                            </p>
+                            <p class="flex">
+                                공기 중 산소 및 습기부식을 유발하는 불순물로부터 금속을 보호합니다.
+                            </p>
+                            <p class="flex">
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center items-end"
+                    style="background-image: url('img/제품-식품등급유-메인.png');">
+                    <div class="flex flex-1"></div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 flex-col">
+                            <p class="flex">
+                                <strong>식품등급유 (Food Grade Lubricants)</strong>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex">
+                                식품 및 음료 제조업에서 안전기준에 부합하고자 사용하는 윤활유입니다.
+                            </p>
+                            <p class="flex">
+                                <br>
+                            </p>
+                            <p class="flex">
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center items-end"
+                    style="background-image: url('img/제품-열처리유-메인.png');">
+                    <div class="flex flex-1"></div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 flex-col">
+                            <p class="flex">
+                                <strong>열처리유 (Heat Treatment Fluids)</strong>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex">
+                                열처리 공정에서 철강을 냉각시키는 데 사용되는 오일로,
+                            </p>
+                            <p class="flex">
+                                높은 인화점 및 발화점, 낮은 점도 및 수분 함량 등이 특징입니다.
+                            </p>
+                            <p class="flex">
+                                <br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide flex justify-center items-end"
+                    style="background-image: url('img/제품-그리스-메인.png');">
+                    <div class="flex flex-1"></div>
+                    <div class="flex flex-1">
+                        <div class="flex flex-1 flex-col">
+                            <p class="flex">
+                                <strong>그리스 (Greases)</strong>
+                            </p>
+                            <hr class="my-4">
+                            <p class="flex">
+                                윤활기유에 증조제를 혼합하여 만든 반고체 또는 고체상의 윤활제로,
+                            </p>
+                            <p class="flex">
+                                기유(베이스오일)와 증조제, 첨가제의 3가지 성분으로 구성되며,
+                            </p>
+                            <p class="flex">
+                                기계 정지 상태에서는 반고체상태, 가동상태에서는 액상이 됩니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="flex swiper-pagination items-center justify-center"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+
+        <section class="con flex flex-1 flex-col">
+            <div class="ex__1 flex flex-col items-center">
+                <div class="subm flex h-[50px] w-[440px] mx-auto mt-[20px] items-center">
+                    <a value="1" class="subm__exp__1 flex flex-1 h-full justify-center">
+                        <img src="img/제품-산업유-유압.jpg" alt="유압유">
+                    </a>
+                    <a value="2" class="subm__exp__2 flex flex-1 h-full justify-center">
+                        <img src="img/제품-산업유-습동.jpg" alt="습동면유">
+                    </a>
+                    <a value="3" class="subm__exp__3 flex flex-1 h-full justify-center">
+                        <img src="img/제품-산업유-콤프.jpg" alt="콤프레셔유">
+                    </a>
+                    <a value="4" class="subm__exp__4 flex flex-1 h-full justify-center">
+                        <img src="img/제품-산업유-기어오일.jpg" alt="기어오일">
+                    </a>
+                    <a value="5" class="subm__exp__5 flex flex-1 h-full justify-center">
+                        <img src="img/제품-산업유-세척유.jpg" alt="세척유">
+                    </a>
+                </div>
+                <div class="exp__1 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-산업유-유압.jpg" alt="유압유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>유압유 (Hydraulic Oils)</strong> </p>
+                        <p class="flex">
+                            동력원으로부터 발생된 에너지를 설비의 구동부(유압모터, 유압 실린더 등)에
+                        </p>
+                        <p class="flex">
+                            전달하는 매체액으로
+                            일반적으로 유압유, 유압작동유, 압력유로 불리며,
+                        </p>
+                        <p class="flex">
+                            터빈유 및 엔진유 등의 주동력장치에도 동시에 사용됩니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp__2 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-산업유-습동.jpg" alt="습동면유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>습동면유 (Slideway Oils)</strong> </p>
+                        <p class="flex">
+                            습동면 전용윤활유로서 베이스오일에 각종첨가제를 조합하여 제조함으로서 
+                        </p>
+                        <p class="flex">
+                            마찰계수를 줄이고 방청, 내부식성능을 높혀 STICK-SLIP(스틱슬립) 성능을 개선하여
+                        </p>
+                        <p class="flex">
+                            생산품의 정밀도를 높혀 기계를 보호하는 역할을 합니다.
+                        </p>
+                        <p class="flex">
+                            즉 CNC,MCT 등 각종 공작기계, 정밀기계에서 왕복운동을 하는
+                        </p>
+                        <p class="flex">
+                            부분을(습동면) 위한 윤활유입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp__3 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-산업유-콤프.jpg" alt="콤프레셔유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>콤프레셔유 (Compressor Oils)</strong> </p>
+                        <p class="flex">
+                            압축기에 사용되는 전용 윤활유입니다. 
+                        </p>
+                    </div>
+                </div>
+                <div class="exp__4 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-산업유-기어오일.jpg" alt="기어오일">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>기어오일 (Gear Oils)</strong> </p>
+                        <p class="flex">
+                            변속기나 디퍼런셜 그리고 트랜스 액승 등에 사용되며 엔진오일보다는
+                        </p>
+                        <p class="flex">
+                            점도가 높으며 압펵 등에 더욱 잘 견딜 수 있는 첨가제 첨가물들이 들어있는
+                        </p>
+                        <p class="flex">
+                            SAE구분에 의해 75W~250W의 점도가 사용되고 있는 오일입니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp__5 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-산업유-세척유.jpg" alt="세척유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>세척유 (Cleaners)</strong> </p>
+                        <p class="flex">
+                            기계관리 및 세척을 위해 사용되며, 수용성 & 비수용성 세척유로 분리됩니다.
+                        </p>
+                        <p class="flex">
+                            기계의 수명과 제품의 성능에 영향을 미칠 수 있으므로 알맞게 사용해야됩니다.
+                        </p>
+                    </div>
+                </div>  
+            </div>  
+
+            <div class="ex__2 flex flex-col items-center">
+                <div class="subm flex h-[50px] w-[440px] mx-auto mt-[20px] justify-center items-center">
+                    <a class="flex flex-grow h-full justify-center">
+                    </a>
+                    <a value="1" class="subm__exp__1 flex w-[88px] h-full justify-center">
+                        <img src="img/제품-절삭유-수용성.jpg" alt="수용성절삭유">
+                    </a>
+                    <a value="2" class="subm__exp__2 flex w-[88px] h-full justify-center">
+                        <img src="img/제품-절삭유-비수용성.png" alt="비수용성절삭유">
+                    </a>
+                    <a class="flex h-full flex-grow justify-center">
+                    </a>
+                </div>
+                <div class="exp__1 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-절삭유-수용성.jpg" alt="수용성절삭유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>수용성 절삭유 (Water Miscible Fluid)</strong> </p>
+                        <p class="flex">
+                            물과 유제가 혼합된 상태에서 사용되는 절삭유로
+                        </p>
+                        <p class="flex">
+                            냉각성과 가성비 등이 우수한 장점이 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="exp__2 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-절삭유-비수용성.png" alt="비수용성절삭유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>비수용성 절삭유 (Neat Cutting Fluid)</strong></p>
+                        <p class="flex">
+                            원액을 사용하여 절삭 및 연삭 가공에 사용하는 금속가공유로
+                        </p>
+                        <p class="flex">
+                            윤활성, 극압성, 성형성 등이 우수한 장점이 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="ex__3 flex flex-col mt-[35px] mb-[20px] items-center">
+                <div class="subm flex h-[50px] w-[440px] mx-auto mt-[20px] justify-center items-center">
+                    <a class="flex flex-grow h-full justify-center">
+                    </a>
+                    <a value="1" class="subm__exp__1 flex w-[88px] h-full justify-center">
+                        <img src="img/제품-소성가공유-소성가능.jfif" alt="소성가공유">
+                    </a>
+                    <a class="flex h-full flex-grow justify-center">
+                    </a>
+                </div>
+                <div class="exp__1 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-소성가공유-소성가능.jfif" alt="소성가공유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3"><strong class="text-[18px]">소성가공유 (Punch·Stamp·Extrude·Roll·Fine-Blanking Fluids)</strong></p>
+                        <p class="flex">
+                            소성가공(소재에 열을 가하거나 실온에서 변형을 주는 가공법)에
+                        </p>
+                        <p class="flex">
+                            활용되는 윤활유입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="ex__4 flex flex-col items-center">
+                <div class="subm flex h-[50px] w-[440px] mx-auto mt-[20px] justify-center items-center">
+                    <a class="flex flex-grow h-full justify-center">
+                    </a>
+                    <a value="1" class="subm__exp__1 flex w-[88px] h-full justify-center">
+                        <img src="img/제품-방청유-방청.jpg" alt="방청유">
+                    </a>
+                    <a class="flex h-full flex-grow justify-center">
+                    </a>
+                </div>
+                <div class="exp__1 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-방청유-방청.jpg" alt="방청유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>방청유 (Corrosion Preventives)</strong> </p>
+                        <p class="flex">
+                            금속, 특히 철에 대한 보호막 역할을 하는 방청첨가제가 함유된 오일로,
+                        </p>
+                        <p class="flex">
+                            공기 중 산소 및 습기부식을 유발하는 불순물로부터 금속을 보호합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="ex__5 flex flex-col items-center">
+                <div class="subm flex h-[50px] w-[440px] mx-auto mt-[20px] justify-center items-center">
+                    <a class="flex flex-grow h-full justify-center">
+                    </a>
+                    <a value="1" class="subm__exp__1 flex w-[88px] h-full justify-center">
+                        <img src="img/제품-식품등급유-식품.jpg" alt="식품등급유">
+                    </a>
+                    <a class="flex h-full flex-grow justify-center">
+                    </a>
+                </div>
+                <div class="exp__1 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-식품등급유-식품.jpg" alt="식품등급유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>식품등급유 (Food Grade Lubricants)</strong> </p>
+                        <p class="flex">
+                            식품 및 음료 제조업에서 안전기준에 부합하고자 사용하는 윤활유입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="ex__6 flex flex-col items-center">
+                <div class="subm flex h-[50px] w-[440px] mx-auto mt-[20px] justify-center items-center">
+                    <a class="flex flex-grow h-full justify-center">
+                    </a>
+                    <a value="1" class="subm__exp__1 flex w-[88px] h-full justify-center">
+                        <img src="img/제품-열처리유-열처리.jpg" alt="열처리유">
+                    </a>
+                    <a class="flex h-full flex-grow justify-center">
+                    </a>
+                </div>
+                <div class="exp__1 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-열처리유-열처리.jpg" alt="열처리유">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>열처리유 (Heat Treatment Fluids)</strong> </p>
+                        <p class="flex">
+                            열처리 공정에서 철강을 냉각시키는 데 사용되는 오일로,
+                        </p>
+                        <p class="flex">
+                            높은 인화점 및 발화점, 낮은 점도 및 수분 함량 등이 특징입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>  
+
+            <div class="ex__7 flex flex-col items-center">
+                <div class="subm flex h-[50px] w-[440px] mx-auto mt-[20px] justify-center items-center">
+                    <a class="flex flex-grow h-full justify-center">
+                    </a>
+                    <a value="1" class="subm__exp__1 flex w-[88px] h-full justify-center">
+                        <img src="img/제품-그리스-그리스.jpg" alt="그리스">
+                    </a>
+                    <a class="flex h-full flex-grow justify-center">
+                    </a>
+                </div>
+                <div class="exp__1 flex w-full h-full">
+                    <div class="flex h-full">
+                        <img src="img/제품-그리스-그리스.jpg" alt="그리스">
+                    </div>
+                    <div class="flex flex-1 flex-col h-full">
+                        <p class="flex mb-3 text-[18px]"> <strong>그리스 (Greases)</strong> </p>
+                        <p class="flex">
+                            윤활기유에 증조제를 혼합하여 만든 반고체 또는 고체상의 윤활제로,
+                        </p>
+                        <p class="flex">
+                            기유(베이스오일)와 증조제, 첨가제의 3가지 성분으로 구성되며,
+                        </p>
+                        <p class="flex">
+                            기계 정지 상태에서는 반고체상태, 가동상태에서는 액상이 됩니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </section>
+    </section>
+
+    <div id="foot-bar"></div>
+
+</body>
+</html>

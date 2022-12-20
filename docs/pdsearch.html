@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- 모바일에서 기기의 해상도 능력에 상관없이 절대적인 크기로 나오도록 -->
+    <!-- 예를들어, pc에서의 300px이 모바일 에서도 똑같은 크기로 나오도록 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토탈상사</title>
+
+    <link rel="stylesheet" href="./css/style_pdsearch.css">
+    <script src="./js/basicset.js" defer></script>
+    <script src="./js/pdresearch.js" defer></script>
+    <script src="./js/swiper.js" defer></script>
+
+    <!-- 테일윈드 불러오기 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- 스크롤 트리거 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <!-- 슬라이더 불러오기 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>     
+    <div id="head-top"></div>
+    
+    <a name="top"></a>
+    <nav class="sidem flex items-center">
+        <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+    </nav>
+
+    <section class="pc-section">
+        <!-- Slider main container -->
+        <div class="mb swiper w-full h-[400px] mb-8">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide flex flex-col justify-center items-center">
+                <p class="flex">견적 및 주문</p>
+            </div>
+            <!-- <div class="swiper-slide">
+                
+            </div> -->
+            <!-- <div class="swiper-slide bg-blue-500">Slide 2</div>
+            <div class="swiper-slide bg-green-500">Slide 3</div> -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev ml-[10px]"></div>
+            <div class="swiper-button-next mr-[10px]"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+
+        <div class="flex flex-col">
+            <div class="search-tab flex con my-3">
+                <div class="search-tab__head con flex flex-col">
+                    <form method="get" action="#" class="flex w-full flex-col">
+                        <div class="flex flex-1 flex-col justify-center">
+                            <p class="flex">검색어</p>
+                            <div class="flex flex-1">
+                                <label class="flex flex-1">
+                                    <input type="text-box" name="color" value="blue">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </label>
+                            </div>  
+                        </div>
+                        <div class="flex flex-1 flex-col justify-center">
+                            <p class="flex">종류별</p>
+                            <div class="flex flex-1">
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">유압유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="red">습동면유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">콤프레셔유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="red">기어오일</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">세척유</label>
+                            </div>  
+                            <div class="flex flex-1">
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">수용성 절삭유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="red">비수용성 절삭유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">소성가공유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="red">방청유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">식품등급유</label>
+                            </div> 
+                            <div class="flex flex-1">
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="red">열처리유</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">그리스</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">ALL</label>
+                                <label class="flex flex-1"></label>
+                                <label class="flex flex-1"></label>
+                            </div>  
+                        </div>
+                        <div class="flex flex-1 flex-col justify-center">
+                            <p class="flex">브랜드</p>
+                            <div class="flex flex-1">
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">훅스</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="red">범우</label>
+                                <label class="flex flex-1"><input type="checkbox" name="color" value="blue">ALL</label>
+                                <label class="flex flex-1"></label>
+                                <label class="flex flex-1"></label>
+                            </div>  
+                        </div>
+                        <div class="flex flex-1 justify-center">
+                            <p class="flex w-full">
+                                <input type="submit" value="Submit" class="flex flex-1 justify-center">
+                                <input type="reset" value="Reset" class="flex flex-1 justify-center">
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="search-tab__body flex h-[500px] mt-3 mb-8">
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="m-section">
+        
+    </section>
+
+    <div id="foot-bar"></div>
+
+</body>
+</html>
