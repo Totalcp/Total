@@ -1,11 +1,12 @@
 console.clear();
 
+let swiper;
 // 스와이퍼
-function Swipter__init() {
-	let swiper = new Swiper('.swiper', {
+function Swiper__init() {
+	swiper = new Swiper('.swiper', {
 		slidesPerView: 1, // 한 페이지당 보여줄 개수
 		spaceBetween: 0, // 슬라이더 간의 간격
-		// loop: true,
+		loop: true,
 
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -20,16 +21,29 @@ function Swipter__init() {
 	});	
 }
 
-Swipter__init();
+Swiper__init();
+
+swiper.on('transitionEnd', function() {
+	localStorage.setItem('pagemain',swiper.realIndex+1);
+	localStorage.setItem('pagenum',1);
+	set_click();
+});
+
+$(document).ready(function(){
+	localStorage.setItem('pagemain',swiper.realIndex+1);
+	localStorage.setItem('pagenum',1);
+	set_click();
+  }); 
+  
 
 //클릭차단
 let $swiperl = $('.swiper-button-prev');
 let $swiperr = $('.swiper-button-next');
 let $swiperpg = $('.swiper-pagination');
 
-$swiperl.hide();
-$swiperr.hide();
-$swiperpg.hide();
+// $swiperl.hide();
+// $swiperr.hide();
+// $swiperpg.hide();
 
 
 

@@ -21,5 +21,5 @@ scrolling(scrollValue);
 $(window).scroll(function () { 
 	localStorage.setItem('scrollmain',$(document).scrollTop());
     scrollValue = localStorage.getItem('scrollmain');
-    scrolling(scrollValue,400);
+    scrolling(scrollValue,200);
 });
