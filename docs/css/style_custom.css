@@ -41,12 +41,15 @@ body {
     padding: 5px 9px;
     z-index: 998;
 }
+/* nav설정 fin */
 /* ------- */
-.subm {
+/* 섹션설정 */
+/* pc섹션 */
+.pc-section .subm {
     height : 80px;
     margin : 70px 0;
 }
-.subm > div > div {
+.pc-section .subm > div > div {
     justify-content: center;
     align-items: center;
     background-color: gray;
@@ -55,15 +58,12 @@ body {
     font-size: 1.1rem;
     width: 220px;
 }
-.subm > div > div:hover  {
+.pc-section .subm > div > div:hover  {
     background-color: white;
     color : black;
     font-weight: bold;
 }
 
-/* nav설정 fin */
-/* 섹션설정 */
-/* pc섹션 */
 .pc-section {
     background-color: black;
     color : white;
@@ -101,13 +101,70 @@ body {
     background-size: cover;
     filter: grayscale(80%);
 }
-
 /* pc 섹션 fin */
+/* m 섹션 */
 .m-section{
     --max-width : 900px;
     max-width: var(--max-width);
 }
 
+.m-section .subm {
+    height : 80px;
+    margin-top : 40px;
+    margin-bottom: 20px;
+}
+.m-section .subm > div > div {
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border-radius: 50%;
+    margin : 0 15px;
+    font-size: 1.1rem;
+    width: 120px;
+}
+.m-section .subm > div > div:hover  {
+    background-color: white;
+    color : black;
+    font-weight: bold;
+}
+
+.m-section {
+    background-color: black;
+    color : white;
+}
+.m-section .mb {
+    height: 300px;
+    border-bottom: 2px solid white;
+    box-sizing: content-box;
+    background-color: #00CFFF;
+}
+
+.m-section .mb > div{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.m-section .mb p {
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    align-items: center;
+    margin-left : 40px;
+    margin-top: 15px;
+}
+
+.m-section .ex p {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.m-section .pd__2 > div:first-child {
+    background-position: 50% 50%;
+    background-size: cover;
+    filter: grayscale(80%);
+}
+/* m 섹션 fin */
 /* 섹션설정 fin */
 @media (min-width : 901px) {
     .pc-section{

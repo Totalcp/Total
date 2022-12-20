@@ -1,0 +1,195 @@
+/* 초기화 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* 라이브러리 */
+.con {    
+    width : var(--max-width);
+    margin : 0 auto;
+}
+
+.con-min-width {
+    min-width : var(--max-width);
+}
+
+/* topbar설정 */
+#head-top {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+}  
+
+/* 커스텀 */
+:root {
+    --max-width : 1200px;
+    --pch : 100px;
+}
+
+/* nav */
+.sidem {
+    position: fixed;
+    top : auto;
+    left : auto;
+    right : 5%;
+    bottom:150px;
+    border : 1px solid white;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 12px;
+    padding: 5px 9px;
+    z-index: 998;
+}
+/* nav fin */
+
+/* 섹션설정 */
+/* 섹션설정 pc*/
+/* 섹션설정 pc 메인배너 */
+.pc-section .mb{
+    position: relative;
+    border-bottom: 2px solid white;
+    box-sizing: content-box;
+    z-index: -1;
+}
+
+.pc-section .mb::before{
+    content: "";
+    position: absolute;
+    top : 0; bottom:0; left : 0; right : 0;
+    background: url("../img/메인배너-월드.png");
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 70%;
+    opacity: 50%;
+} 
+
+.pc-section .mb div.swiper-slide img{
+    height: 200px;
+    align-items: center;
+    margin-top : 40px;
+    opacity: 100%;
+}
+
+.pc-section .mb p {
+    color : white;
+    margin-top : 40px;
+    font-size: 48px;
+    font-weight: 700px;
+}
+
+/* 스와이퍼 변환 */
+.pc-section .mb .swiper-button-prev::after,
+.pc-section .mb .swiper-button-next::after
+ {
+    color : rgba(255,255,255,0.7);
+}
+
+.pc-section .mb .swiper-pagination-bullet {
+    background-color : rgba(255,255,255,0.7);
+    margin: 1px;
+    height: 12px;
+    width: 12px;
+}
+
+.pc-section .mb .swiper-pagination-bullet-active {
+    background-color : rgba(255,255,255,1);
+}
+
+/* 페이지 네이션 */
+
+/* 페이지 네이션 fin */
+/* 스와이퍼 변환 fin */
+/* 섹션설정 pc 메인배너 fin */
+
+/* 탭메뉴 */
+.pc-section .search-tab {
+    color : white;
+}
+
+.pc-section .search-tab__head {
+    --max-width : 900px;
+}
+
+/* 탭메뉴 fin */
+/* 섹션설정 pc fin */
+/* 섹션설정 m*/
+.m-section{
+    --max-width : 900px;
+    max-width: var(--max-width);
+}
+
+.m-section__1st > div {
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    margin: 3px;
+}
+/* 섹션설정 m fin */
+.m-section .mb{
+    position: relative;
+    border-bottom: 2px solid white;
+    box-sizing: content-box;
+    z-index: -1;
+}
+
+.m-section .mb::before{
+    content: "";
+    position: absolute;
+    top : 0; bottom:0; left : 0; right : 0;
+    background: url("../img/메인배너-월드.png");
+    background-repeat: no-repeat;
+    background-position: center 40%;
+    background-size: 70%;
+    opacity: 50%;
+} 
+
+.m-section .mb div.swiper-slide img{
+    height: 200px;
+    align-items: center;
+    margin-top : 40px;
+    opacity: 100%;
+}
+
+.m-section .mb  p {
+    color : white;
+    margin-top : 40px;
+    font-size: 1.4rem;
+}
+
+/* 스와이퍼 변환 */
+.m-section .mb .swiper-button-prev::after,
+.m-section .mb .swiper-button-next::after
+ {
+    color : rgba(255,255,255,0.7);
+}
+
+.m-section .mb .swiper-pagination-bullet {
+    background-color : rgba(255,255,255,0.7);
+    margin: 1px;
+    height: 12px;
+    width: 12px;
+}
+
+.m-section .mb .swiper-pagination-bullet-active {
+    background-color : rgba(255,255,255,1);
+}
+
+/* 섹션설정 fin */
+
+@media (min-width : 901px) {
+    .pc-section{
+        display: block;
+    }
+    .m-section {
+        display: none;
+    }
+}
+@media (max-width : 900px) {
+    .pc-section{
+        display: none;
+    }
+    .m-section {
+        display: block;
+    }
+}

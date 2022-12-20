@@ -20,18 +20,27 @@ body {
     --pch : 100px;
 }
 
-.pcfoot {
-    background-color: black;
-    height: 200px;
-    padding-top: 10px;
+.footer {
+    background-color: #191919;
+    padding-top: 30px;
     padding-bottom: 30px;
     border-top : 1px solid white;
 }
 
-.pcfoot > div {
+.footer > div {
     color : white;
+    margin-bottom: 20px;
 }
 
-.pcfoot > div > p {
+.footer > div > p {
     padding: 2px 0;
+}
+
+.footer > div [class*="-section"] {
+    padding : 10px;
+    border: 1px solid white;
+    color : white;
+    border-radius: 10px;
+    margin-top : 30px;
+    margin-bottom: 40px;
 }

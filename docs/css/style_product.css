@@ -51,77 +51,132 @@ body {
     text-align: center;
 }
 /* ------- */
-.subm {
-    height : 80px;
-    margin : 70px 0;
-}
-.subm > div > div {
-    justify-content: center;
-    align-items: center;
-    background-color: gray;
-    border-radius: 50%;
-    margin : 0 20px;
-    font-size: 1.1rem;
-    width: 220px;
-}
-.subm > div > div:hover  {
-    background-color: white;
-    color : black;
-    font-weight: bold;
-}
 
+[class^=subm__exp__].active > img {
+    box-sizing: border-box;
+    padding : 2px;
+    border : 2px solid white;
+}
 /* nav설정 fin */
 /* 섹션설정 */
-/* pc섹션 */
-.pc-section .mb {
-    height: 400px;
-    background-position: 50% 50%;
-    background-size: cover;
+/* 섹션설정 pc*/
+/* 섹션설정 pc 메인배너 */
+.pc-section .mb .swiper-slide{
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    width: 1200px;
+} 
+
+.pc-section .mb .swiper-slide div div {
+    padding-left: 30px;
+    padding-bottom: 70px;
+}
+
+.pc-section .mb .swiper-slide div hr {
+    padding-left: 30px;
+    width: 500px;
+}
+
+.pc-section .mb .swiper-slide div strong {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.pc-section .mb .swiper-slide div p {
+    color : white;
+    margin-top : 6px;
+}
+
+/* 스와이퍼 변환 */
+.pc-section .mb .swiper-button-prev,
+.pc-section .mb .swiper-button-next
+{
+    position: fixed;
+    top : 50%;
+}
+
+.pc-section .mb .swiper-button-prev::after,
+.pc-section .mb .swiper-button-next::after
+{
+    color : rgba(0,0,0,0.5);
+    position : absolute;
+}
+
+.pc-section .mb .swiper-button-prev::before,
+.pc-section .mb .swiper-button-next::before
+{
+    content: "";
+    position: absolute;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    padding: 70px;
+}
+
+.pc-section .mb .swiper-button-prev:hover::before,
+.pc-section .mb .swiper-button-next:hover::before
+{
+    background-color: rgba(255,255,255,0.5);
+}
+
+.pc-section .mb .swiper-button-prev::before
+{
+    left : -75px;
+}
+
+.pc-section .mb .swiper-button-next::before
+{
+    left : -35px;
+}
+
+/* 스와이퍼 변환 fin */
+/* 페이지 네이션 */
+.pc-section .mb .swiper-pagination-bullet {
+    background-color : rgba(255,255,255,0.7);
+    height: 12px;
+    width: 12px;
+}
+
+.pc-section .mb .swiper-pagination-bullet-active {
+    background-color : rgba(255,255,255,1);
     position: relative;
 }
 
-.pc-section .mb > div {
+.pc-section .mb .swiper-pagination-bullet-active::after {
+    content: "";
     position: absolute;
-    top : auto;
-    left : 52%;
-    right: 20px;
-    bottom: 15px;
-    padding: 30px 20px;
+    top : -3px; left : -3px; right:-3px; bottom:-3px;
+    border-radius: 50%;
+    border : 2px solid white;
 }
 
-.pc-section .mb > div >p {
-    color : white;
+/* 페이지 네이션 fin */
+/* 섹션설정 pc 메인배너 fin */
+
+.pc-section [class^="ex__"] {
+    margin: 40px 0;
 }
 
-.pc-section .mb > div strong {
-    font-size: 1.5rem;
-}
-
-.pc-section [class^="ex__"]{
+.pc-section [class^="exp__"]{
     background-color: white;
     color : black;
     max-width : 1000px;
     padding : 20px;
     align-items: center;
+    margin: 20px 0 ;
 }
 
-.pc-section .ex {
-    margin-bottom: 20px;
-}
-
-.pc-section [class^="ex__"] > div:first-child{
+.pc-section [class^="exp__"] > div:first-child{
     justify-content: center;
     align-items: center;  
 }
 
-.pc-section [class^="ex__"] > div:first-child > img{
+.pc-section [class^="exp__"] > div:first-child > img{
     width : 270px;
     height: 200px;
     object-fit: cover; 
 }
 
-
-.pc-section [class^="ex__"] > div:last-child{
+.pc-section [class^="exp__"] > div:last-child{
     padding-left : 40px;
 }
 
