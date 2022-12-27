@@ -73,8 +73,8 @@
                             <p class="flex">검색어</p>
                             <div class="flex flex-1">
                                 <label class="flex flex-1">
-                                    <input type="text-box" name="color" value="blue">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    <input id="pd_research" type="text-box" name="color" >
+                                    <i class="fa-solid fa-magnifying-glass" onclick="pd_research()"></i>
                                 </label>
                             </div>  
                         </div>
@@ -120,11 +120,15 @@
                         </div>
                     </form>
                 </div>
-                <div class="search-tab__body flex h-[500px] mt-3 mb-8">
-                    
-                </div>
             </div>
-            
+            <div class="pd con flex flex-1 flex-col w-[1000px]">
+                <div class="pdtitle flex justify-start">
+                    <p class="flex bg-green-500">
+                        Major Productions
+                    </p>
+                </div>
+                <div id="productInfo" class="flex flex-col"></div>
+            </div>
         </div>
     </section>
 
