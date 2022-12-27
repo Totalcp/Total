@@ -1,12 +1,17 @@
 console.clear();
 
 let swiper;
+
+pagemain=localStorage.getItem('pagemain');
+pagenum=localStorage.getItem('pagenum');
+
 // 스와이퍼
 function Swiper__init() {
 	swiper = new Swiper('.swiper', {
 		slidesPerView: 1, // 한 페이지당 보여줄 개수
 		spaceBetween: 0, // 슬라이더 간의 간격
 		loop: true,
+		initialSlide: pagemain-1,
 
 		navigation: {
 			nextEl: '.swiper-button-next',
@@ -31,7 +36,7 @@ swiper.on('transitionEnd', function() {
 
 $(document).ready(function(){
 	localStorage.setItem('pagemain',swiper.realIndex+1);
-	localStorage.setItem('pagenum',1);
+	// localStorage.setItem('pagenum',1);
 	set_click();
   }); 
   

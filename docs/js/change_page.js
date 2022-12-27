@@ -5,6 +5,7 @@ let anchor=localStorage.getItem('pagenum');
 
 function init_click(anchor){
     console.log('init_click');
+
     $('.ex__'+anchor).css('display','none');
     $('.pd__'+anchor).css('display','none');
     $('.subm__'+anchor).css('backgroundColor','');
