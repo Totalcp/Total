@@ -102,6 +102,12 @@ body {
 /* 스와이퍼 변환 fin */
 /* 섹션설정 pc 메인배너 fin */
 
+/* 검색설정 */
+.pc-section #pd_research {
+    color : black;
+}
+/* 검색설정 fin */
+
 /* 탭메뉴 */
 .pc-section .search-tab {
     color : white;
